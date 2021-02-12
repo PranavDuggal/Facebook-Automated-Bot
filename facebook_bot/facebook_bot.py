@@ -27,7 +27,7 @@ options=webdriver.ChromeOptions()
 options.headless=False
 
 prefs={"profile.default_content_setting_values.notifications", 2}
-driver = webdriver.Chrome(executable_path="C:/Users/prana/OneDrive/Documents/chromedriver.exe",chrome_options=options)
+driver = webdriver.Chrome(executable_path="Enter the executable path for chromedriver here",chrome_options=options)
 driver.maximize_window()
 driver.get('https://www.facebook.com/')
 time.sleep(5)
