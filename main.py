@@ -49,13 +49,13 @@ bot = Facebook_Bot(driver,config,friends)
 bot.login() # Logs into the facebook account
 
 
-# bot.open_profile() # Opens the Profile Page
+bot.open_profile() # Opens the Profile Page
 
 
-# bot.add_friend() # This Function helps to send a friend request. 
+bot.add_friend() # This Function helps to send a friend request. 
 
 
-# bot.write_post(gen.sentence()) # This Helps in posting a message on your profile
+bot.write_post(gen.sentence()) # This Helps in posting a message on your profile
 
 
 # bot.open_friends_profile_randomly() # This functions Randomly chooses a friend in your friends list
