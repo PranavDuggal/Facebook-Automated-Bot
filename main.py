@@ -35,6 +35,13 @@ bot = Facebook_Bot(driver,config,friends)
 
 bot.login()
 bot.open_profile()
+
+from essential_generators import DocumentGenerator
+gen = DocumentGenerator()
+bot.write_post(gen.sentence())
+
+
 bot.open_friends_profile_randomly()
-# bot.write_post()
+
+
 
