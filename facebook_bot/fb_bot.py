@@ -22,7 +22,7 @@ class Facebook_Bot:
                 email_text.send_keys(self.username)
                 password_txt = self.driver.find_element_by_id('pass')
                 password_txt.send_keys(self.password)
-                self.driver.find_element_by_id('u_0_d').click()
+                self.driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/button').click()
                 time.sleep(6)
 
 
