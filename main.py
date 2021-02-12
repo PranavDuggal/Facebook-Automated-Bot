@@ -39,7 +39,7 @@ driver = webdriver.Chrome(executable_path="Driver\chromedriver.exe",chrome_optio
 # Facebook Bot Flow
 # 1. Login
 # 2. Open account profile page
-# 3. Add a friend
+# 3. Add a friend. 
 # 4. Write a post from home page
 # 5. Open a random friends profile and write a post
 
@@ -49,13 +49,13 @@ bot = Facebook_Bot(driver,config,friends)
 bot.login() # Logs into the facebook account
 
 
-bot.open_profile() # Opens the Profile Page
+# bot.open_profile() # Opens the Profile Page
 
 
-bot.add_friend() # This Function helps to add a Friend
+# bot.add_friend() # This Function helps to send a friend request. 
 
 
-bot.write_post(gen.sentence()) # This Helps in posting a message on your profile
+# bot.write_post(gen.sentence()) # This Helps in posting a message on your profile
 
 
 # bot.open_friends_profile_randomly() # This functions Randomly chooses a friend in your friends list

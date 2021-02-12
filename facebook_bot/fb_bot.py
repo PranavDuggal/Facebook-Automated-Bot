@@ -32,7 +32,7 @@ class Facebook_Bot:
                 self.driver.get(url)
                 time.sleep(6)
 
-        def add_friend(self,friend_name="Ullrich Alfceiccdichh Sadanstein"):
+        def add_friend(self,friend_name="Helen Alfcgdeggbcih Vijayvergiyasen"):
                 # Possible exceptions - Name doesn't exist; Already added as a friend
                 
                 time.sleep(6)
@@ -43,16 +43,19 @@ class Facebook_Bot:
                 time.sleep(1)
                 pydirectinput.moveTo(120,250) 
                 pydirectinput.click()
-                
                 time.sleep(6)
-                add_friend = self.driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[3]/div/div/div/div[2]/div/div/div/div[1]/div/div')
+                friend = self.driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div[2]/div/div/div/div/div/div[1]/div/div/div/div/div/div[1]/div/div/div/div/div[2]/div/div[1]/h2/span/span/div/a')
+                friend.click()
+                time.sleep(3)
+                add_friend = self.driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[2]/div[1]/div/div/div[3]/div/div/div/div[2]/div/div/div/div[3]/div/span/div')
                 add_friend.click()
-                time.sleep(6)
-                cancel_request = self.driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[3]/div/div/div/div[2]/div/div/div/div[1]/div/div')
-                cancel_request.click()
                 time.sleep(6)
                 
 
+        # def cancel_friend(self):
+                # cancel_request = self.driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[2]/div[1]/div/div/div[3]/div/div/div/div[2]/div/div/div/div[3]/div/span/div')
+                # cancel_request.click()
+                # time.sleep(6)
 
         def write_post(self,message = "I am a Bot",url="https://www.facebook.com"):
                 # Possible exceptions: If posting same as previous in short time, throws an exception
@@ -73,7 +76,7 @@ class Facebook_Bot:
                 time.sleep(6)
                 self.driver.get(url)
                 time.sleep(6)
-                x = random.choice(range(1,9))
+                x = random.choice(range(0,8))
                 friend = self.profile_friends[x]
                 friend_comment = self.driver.find_element_by_xpath(friend)
                 friend_comment.click()
