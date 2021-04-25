@@ -9,6 +9,7 @@ requests = "*"
 numpy = "*"
 selenium = "*"
 essential-generators = "*"
+pyautogui = "*"
 
 [dev-packages]
 
